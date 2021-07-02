@@ -4,10 +4,12 @@
   :license "BSD"
   :depends-on ("hunchentoot"
                "parenscript"
+               "cl-who"
                "cl-morse")
   :components ((:module "src"
                 :components
-                ((:file "main"))))
+                ((:file "main")
+                 (:file "templates"))))
   :description ""
   :in-order-to ((test-op (test-op "cl-morse-web/tests"))))
 
