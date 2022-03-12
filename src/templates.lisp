@@ -6,7 +6,7 @@
 (setf (html-mode) :html5)
 
 (defmacro standard-page ((&key title) &body body)
-  "Renders a standard templage page with a title. Body is the body of the page to render.
+  "Renders a standard template page with a title. Body is the body of the page to render.
    Returns a rendered page as string."
   `(with-html-output-to-string (s nil :prologue t :indent t)
      (:html :lang "en"
